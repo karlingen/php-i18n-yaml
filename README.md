@@ -23,8 +23,8 @@ DIR_LOCALE = ""   # full path to your locales.
 #### test.php
 ```php
 <?php
-DEFAULT_LOCALE = "en"
-DIR_LOCALE = "/var/www/config/locales/"
+define("DEFAULT_LOCALE", "en");
+define("DIR_LOCALE", "/var/www/config/locales/");
 
 require_once("i18n.php") // you should probably use an autoloader
 
