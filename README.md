@@ -28,9 +28,15 @@ DIR_LOCALE = "/var/www/config/locales/"
 
 require_once("i18n.php") // you should probably use an autoloader
 
+# en
 echo "Welcome ".I18N::t("user.name");
 echo I18N::t("why.is.this.so.cool");
 echo I18N::t("have_fun");
+
+# other languages (assuming "sv" here):
+echo "Welcome ".I18N::t("user.name", "sv");
+echo I18N::t("why.is.this.so.cool", "sv");
+echo I18N::t("have_fun", "sv");
 ?>
 ```
 
