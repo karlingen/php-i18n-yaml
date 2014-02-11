@@ -54,11 +54,29 @@ en:
   have_fun: Have fun!
 ```
 
+#### sv.yml
+
+```yaml
+sv:
+  user:
+    name: Karl Metum
+  why:
+    is:
+      this:
+        so:
+          cool: Jag vet inte..
+  have_fun: Ha så kul!
+```
+
 ##### Output:
 ```
 Welcome Karl Metum.
 I don't know..
 Have fun!
+
+Welcome Karl Metum.
+Jag vet inte..
+Ha så kul!
 ```
 
 ## Contributing
