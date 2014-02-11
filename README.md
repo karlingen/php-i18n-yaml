@@ -16,7 +16,6 @@ Make sure you have the following constants defined in your application somewhere
 ```
 DEFAULT_LOCALE = "" # the default locale.
 DIR_LOCALE = ""   # full path to your locales.
-
 ```
 
 ## Example
@@ -47,7 +46,6 @@ en:
         so:
           cool: I don't know..
   have_fun: Have fun!
-
 ```
 
 ##### Output:
