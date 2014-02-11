@@ -29,7 +29,9 @@ DIR_LOCALE = "/var/www/config/locales/"
 
 require_once("i18n.php") // you should probably use an autoloader
 
-echo "Welcome ".I18N::t("user.name").". ". I18N::t("have_fun");
+echo "Welcome ".I18N::t("user.name");
+echo I18N::t("why.is.this.so.cool");
+echo I18N::t("have_fun");
 ?>
 ```
 
@@ -37,15 +39,21 @@ echo "Welcome ".I18N::t("user.name").". ". I18N::t("have_fun");
 
 ```yaml
 en:
-  have_fun: Have fun!
   user:
     name: Karl Metum
+  why:
+    is:
+      this:
+        so:
+          cool: I don't know..
+  have_fun: Have fun!
 
 ```
 
 ##### Output:
 ```
-Welcome Karl Metum. Have fun!
+Welcome Karl Metum.
+Have fun!
 ```
 
 ## Contributing
